@@ -9,51 +9,75 @@ We first summarize and further categorize existing WSAD algorithms into three ca
 | Method | Reference | Venue | Backbone | Modalities | Key Idea | Official Code |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 ||||Incomplete Supervision||||
-|OE  | [ref](https://www.semanticscholar.org/paper/Learning-Outlier-Ensembles%3A-The-Best-of-Both-Worlds-Micenkov%C3%A1-McWilliams/a517bc0a071be0982150c38c8ac3c52093995106)       | KDD'14  |    -     | Tabular |  Anomaly feature representation learning | ×|
-|XGBOD  |[ref](https://ieeexplore.ieee.org/document/8489605)       | IJCNN'18  |   -      | Tabular |  Anomaly feature representation learning | [√](https://github.com/yzhao062/XGBOD)|
-|DeepSAD  |[ref](https://iclr.cc/virtual_2020/poster_HkgH0TEYwH.html)       | ICLR'20  | MLP        | Tabular |  Anomaly feature representation learning | [√](https://github.com/lukasruff/Deep-SAD-PyTorch)|
-|ESAD      |[ref](https://arxiv.org/abs/2012.04905v1)      |    Preprint      |      MLP      |   Tabular      |  Anomaly feature representation learning                  | ×|
-|DSSAD        |[ref](https://ieeexplore.ieee.org/document/9414285)   | ICASSP'21         |    CNN        | Image/Video        |          Anomaly feature representation learning          | ×|
-|REPEN    | [ref](https://dl.acm.org/doi/10.1145/3219819.3220042)  | KDD'18   | MLP        | Tabular |      Anomaly feature representation learning                   |  × |
-|AA-BiGAN | [ref](https://www.ijcai.org/proceedings/2022/0313.pdf)   | IJCAI'22 | GAN        | Tabular |         Anomaly feature representation learning                | [√](https://github.com/tbw162/AA-BiGAN) |
-|Dual-MGAN      |[ref](https://dl.acm.org/doi/10.1145/3522690)        |      TKDD'22     |    GAN       |    Tabular     |     Anomaly feature representation learning                    | [√](https://github.com/leibinghe/Dual-MGAN)|
-|DevNet  | [ref](https://dl.acm.org/doi/10.1145/3292500.3330871) | KDD'19   | MLP       | Tabular |   Anomaly score learning  |  [√](https://github.com/GuansongPang/deviation-network)|
-|PReNet | [ref](https://arxiv.org/abs/1910.13601) |  Preprint        | MLP       | Tabular |  Anomaly score learning                         |  ×   |
-|FEAWAD | [ref](https://ieeexplore.ieee.org/abstract/document/9465358/)   | TNNLS'21  | AE        | Tabular |     Anomaly score learning                       | [√](https://github.com/yj-zhou/Feature_Encoding_with_AutoEncoders_for_Weakly-supervised_Anomaly_Detection)    |
-|SNARE    | [ref](https://www.cs.cmu.edu/~mmcgloho/pubs/snare.pdf) | KDD'09    | -          | Graph   |  Graph learning and label propagation |   ×  |
-|AESOP    | [ref](https://dl.acm.org/doi/abs/10.1145/2623330.2623342) | KDD'14    |  -         | Graph   |  Graph learning and label propagation  |   ×  |
-|SemiGNN  | [ref](https://ieeexplore.ieee.org/document/8970829)      | ICDM'19   | MLP+Attention | Graph   |  Graph learning and label propagation | ×    |
-|SemiGAD   | [ref](https://ieeexplore.ieee.org/document/9533507)   | IJCNN'21  | GNN       | Graph   |  Graph learning and label propagation  | × |
-|Meta-GDN | [ref](https://dl.acm.org/doi/10.1145/3442381.3449922)       | WWW'21    | GNN       | Graph   |   Graph learning and label propagation |  [√](https://github.com/kaize0409/Meta-GDN_AnomalyDetection)   |
-|SemiADC  | [ref](www.sciencedirect.com/science/article/pii/S0020025521003856)      | IS Journal'21 | GAN   | Graph | Graph learning and label propagation|  × |
-|SSAD     | [ref](https://dl.acm.org/doi/10.5555/2512538.2512545) | JAIR'13   |  -         | Tabular |   Active learning                  |  ×   |
-|AAD      | [ref](https://ieeexplore.ieee.org/document/7837915) | ICDM'16 | -         | Tabular |  Active learning   |   [√](https://github.com/shubhomoydas/pyaad)  |
-|SLA-VAE    | [ref](https://dl.acm.org/doi/abs/10.1145/3485447.3511984)      |   WWW'22        |    VAE      |     Time series    |          Active learning                    | × |
-|Meta-AAD | [ref](https://ieeexplore.ieee.org/document/9338270)      | ICDM'20   | MLP       | Tabular |  Reinforcement learning |   [√](https://github.com/daochenzha/Meta-AAD)  |
-|DPLAN    | [ref](https://dl.acm.org/doi/10.1145/3447548.3467417)     | KDD'21   | MLP       | Tabular |  Reinforcement learning  |  ×   |
-|GraphUCB | [ref](https://dl.acm.org/doi/10.1145/3289600.3290964) | WSDM'19 |   -        | Graph   |  Reinforcement learning  |  [√](https://github.com/kaize0409/GraphUCB_AnomalyDetection)   |
+| OE  | [ref](https://www.semanticscholar.org/paper/Learning-Outlier-Ensembles%3A-The-Best-of-Both-Worlds-Micenkov%C3%A1-McWilliams/a517bc0a071be0982150c38c8ac3c52093995106) | KDD'14  | -  | Tabular | Anomaly feature representation learning | ×  |
+| XGBOD  | [ref](https://ieeexplore.ieee.org/document/8489605)| IJCNN'18 | -  | Tabular | Anomaly feature representation learning | [√](https://github.com/yzhao062/XGBOD) |
+| DeepSAD| [ref](https://iclr.cc/virtual_2020/poster_HkgH0TEYwH.html) | ICLR'20 | MLP| Tabular | Anomaly feature representation learning | [√](https://github.com/lukasruff/Deep-SAD-PyTorch) |
+| ESAD| [ref](https://arxiv.org/abs/2012.04905) | BMVC'21 | MLP| Tabular | Anomaly feature representation learning | ×  |
+| DSSAD  | [ref](https://ieeexplore.ieee.org/document/9414285)| ICASSP'21| CNN| Image/Video| Anomaly feature representation learning | ×  |
+| REPEN  | [ref](https://dl.acm.org/doi/10.1145/3219819.3220042)| KDD'18  | MLP| Tabular | Anomaly feature representation learning | ×  |
+| AA-BiGAN  | [ref](https://www.ijcai.org/proceedings/2022/0313.pdf)  | IJCAI'22| GAN| Tabular | Anomaly feature representation learning | [√](https://github.com/tbw162/AA-BiGAN)  |
+| Dual-MGAN | [ref](https://dl.acm.org/doi/10.1145/3522690)  | TKDD'22 | GAN| Tabular | Anomaly feature representation learning | [√](https://github.com/leibinghe/Dual-MGAN)  |
+| SemiGNN| [ref](https://ieeexplore.ieee.org/document/8970829)  | ICDM'19 | MLP+Attention  | Graph| Anomaly feature representation learning | ×  |
+| ACT | [ref](https://arxiv.org/abs/2212.01096)| AAAI'23 | GNN| Graph| Anomaly feature representation learning | [√](https://github.com/QZ-WANG/ACT) |
+| DevNet | [ref](https://dl.acm.org/doi/10.1145/3292500.3330871)| KDD'19  | MLP| Tabular | Anomaly score learning  | [√](https://github.com/GuansongPang/deviation-network) |
+| PReNet | [ref](https://arxiv.org/abs/1910.13601)  | Preprint| MLP| Tabular | Anomaly score learning  | ×  |
+| FEAWAD | [ref](https://ieeexplore.ieee.org/abstract/document/9465358/) | TNNLS'21 | AE | Tabular | Anomaly score learning  | [√](https://github.com/yj-zhou/Feature_Encoding_with_AutoEncoders_for_Weakly-supervised_Anomaly_Detection) |
+| LEDGM  | [ref]() | TNNLS'21 | AE | Tabular | Anomaly score learning  | ×  |
+| PReNet | [ref](https://arxiv.org/abs/1910.13601)  | KDD'23  | MLP| Tabular | Anomaly score learning  | [√](https://github.com/mala-lab/PReNet)  |
+| Overlap| [ref]() | KDD'23  | -  | Tabular | Anomaly score learning  | [√](https://github.com/Minqi824/Overlap) |
+| TargAD | [ref]() | ICDE'24 | AE | Tabular | Anomaly score learning  | [√](https://github.com/ZhouF-ECNU/TargAD)|
+| SAD | [ref]() | IJCAI'23| AE | Graph| Anomaly score learning  | [√](https://github.com/D10Andy/SAD)|
+| SNARE  | [ref](https://www.cs.cmu.edu/~mmcgloho/pubs/snare.pdf)  | KDD'09  | -  | Graph| Graph learning and label propagation| ×  |
+| AESOP  | [ref](https://dl.acm.org/doi/abs/10.1145/2623330.2623342)  | KDD'14  | -  | Graph| Graph learning and label propagation| ×  |
+| SemiGAD| [ref](https://ieeexplore.ieee.org/document/9533507)  | IJCNN'21 | GNN| Graph| Graph learning and label propagation| ×  |
+| Meta-GDN  | [ref](https://dl.acm.org/doi/10.1145/3442381.3449922)| WWW'21  | GNN| Graph| Graph learning and label propagation| [√](https://github.com/kaize0409/Meta-GDN_AnomalyDetection) |
+| SSAD| [ref](https://dl.acm.org/doi/10.5555/2512538.2512545)  | JAIR'13 | -  | Tabular | Active learning| ×  |
+| AAD | [ref](https://ieeexplore.ieee.org/document/7837915)  | ICDM'16 | -  | Tabular | Active learning| [√](https://github.com/shubhomoydas/pyaad)  |
+| SLA-VAE| [ref](https://dl.acm.org/doi/abs/10.1145/3485447.3511984)  | WWW'22  | VAE| Time series| Active learning| ×  |
+| EAL-GAN| [ref]()  | TPAMI'23 | GAN| Tabular | Active learning| [√](https://github.com/smallcube/EAL-GAN)|
+| SOEL| [ref]() | ICML'23 | CNN| Tabular/Image | Active learning  | [√](https://github.com/aodongli/Active-SOEL) |
+| Meta-AAD  | [ref](https://ieeexplore.ieee.org/document/9338270)  | ICDM'20 | MLP| Tabular | Reinforcement learning  | [√](https://github.com/daochenzha/Meta-AAD) |
+| DPLAN  | [ref](https://dl.acm.org/doi/10.1145/3447548.3467417)| KDD'21  | MLP| Tabular | Reinforcement learning  | ×  |
+| RobustTAD | [ref]()  | KDDW'20 | U-Net | Time series| Data Augmentation | ×  |
+| CutAddPaste  | [ref]() | KDD'24  | CNN| Time-series| Data Augmentation | [√](https://github.com/ruiking04/CutAddPaste) |
+| NNG-Mix| [ref]()  | TNNLS'24 | -  | Tabular | Data Augmentation | [√](https://github.com/donghao51/NNG-Mix)|
+| RoSAS  | [ref]()| IP&M'23  | MLP| Tabular | Data Augmentation | [√](https://github.com/xuhongzuo/rosas)  |
+| ADGym  | [ref]() | NIPS'23 | -  | Tabular | AutoML | [√](https://github.com/Minqi824/ADGym)|
+| ConsisGAD | [ref]() | ICLR'24 | GNN| Graph| Data Augmentation | [√](https://github.com/Xtra-Computing/ConsisGAD) |
+| GenGA  | [ref]()  | KDD'24  | GCN| Graph| Data Augmentation | ×  |
 ||||Inexact Supervision||||
-|MIL          |  [ref](https://ieeexplore.ieee.org/document/8578776)   | CVPR'18 | MLP          |  Video  |  Multiple Instance Learning  | [√](https://github.com/vantage-vision-vv/Anomaly-Detection-in-Surveillance-Videos)        
-|TCN-IBL       |  [ref](https://ieeexplore.ieee.org/document/8803657) | ICIP'19  | CNN          | Video   |  Multiple Instance Learning  |  ×       
-|AR-Net        |  [ref](https://ieeexplore.ieee.org/document/9102722)     |ICME'20   |  MLP         | Video   | Multiple Instance Learning   | [√](https://github.com/wanboyang/Anomaly_AR_Net_ICME_2020)        
-|RTFM         |  [ref](https://ieeexplore.ieee.org/document/9710957)    | ICCV'21  | CNN+Attention |  Video  |  Multiple Instance Learning  | [√](https://github.com/tianyu0207/RTFM)            
-|Motion-Aware  |  [ref](https://arxiv.org/abs/1907.1021)     | BMVC'19  | AE+Attention| Video   |  Multiple Instance Learning  |   ×     
-|CRF-Attention    |  [ref](https://ieeexplore.ieee.org/document/9710685) |ICCV'21   | TRN+Attention    |  Video  |  Multiple Instance Learning  |      ×   
-|MPRF         |  [ref](https://www.ijcai.org/proceedings/2021/0162.pdf)       |IJCAI'21  | MLP+Attention     |  Video  |  Multiple Instance Learning  |   ×      
-|MCR         |  [ref](https://ieeexplore.ieee.org/abstract/document/9860012)      |ICME'22   |   MLP+Attention   | Video  |   Multiple Instance Learning |  ×        
-|XEL          |   [ref](https://ieeexplore.ieee.org/document/9560033)      |  SPL'21  |  MLP          |  Video  |   Cross-epoch Learning       | [√](https://github.com/sdjsngs/XEL-WSAD)            
-|MIST          |  [ref](https://ieeexplore.ieee.org/document/9578773)  |CVPR'21   | MLP+Attention     |  Video  |  Multiple Instance Learning  |    [√](https://github.com/fjchange/MIST_VAD)      
-|MSLNet       |  [ref](https://ojs.aaai.org/index.php/AAAI/article/download/20028/version/18325/19787)         | AAAI'22  | Transformer    |   Video |   Multiple Instance Learning |  [√](https://github.com/xidianai/MSL)        
-|SRF             |  [ref](https://ieeexplore.ieee.org/document/9204830)    | SPL'20   |  MLP          |  Video |  Self Reasoning |  ×            
-|WETAS       |  [ref](https://ieeexplore.ieee.org/document/9710920)     | ICCV'21  | MLP           |   Time-series/Video |   Dynamic Time Warping       |    ×            
-|Inexact AUC   |  [ref](https://dl.acm.org/doi/10.1007/s10994-020-05880-w)  | ML Journal'20  |  AE   |  Tabular  |  AUC maximization  |    ×      
-|Isudra           |[ref](https://dl.acm.org/doi/10.1145/3439870) |  TIST'21  |   -   |Time-series  |  Bayesian optimization  |   [√](https://github.com/jb3dahmen/indirectsupervision)
+| Sultani et al. | [ref](https://ieeexplore.ieee.org/document/8578776)| CVPR'18 | MLP| Video| Multiple Instance Learning | [√](https://github.com/vantage-vision-vv/Anomaly-Detection-in-Surveillance-Videos) |
+| TCN-IBL| [ref](https://ieeexplore.ieee.org/document/8803657)| ICIP'19 | CNN| Video| Multiple Instance Learning | ×  |
+| AR-Net | [ref](https://ieeexplore.ieee.org/document/9102722)| ICME'20 | MLP| Video| Multiple Instance Learning | [√](https://github.com/wanboyang/Anomaly_AR_Net_ICME_2020) |
+| RTFM| [ref](https://ieeexplore.ieee.org/document/9710957)| ICCV'21 | CNN+Attention  | Video| Multiple Instance Learning | [√](https://github.com/tianyu0207/RTFM)|
+| Zhu et al. | [ref](https://arxiv.org/abs/1907.1021)| BMVC'19 | AE+Attention| Video| Multiple Instance Learning | ×  |
+| Purwanto et al.| [ref](https://ieeexplore.ieee.org/document/9710685)| ICCV'21 | TRN+Attention  | Video| Multiple Instance Learning | ×  |
+| MPRF| [ref](https://www.ijcai.org/proceedings/2021/0162.pdf)  | IJCAI'21 | MLP+Attention  | Video| Multiple Instance Learning | ×  |
+| MCR | [ref](https://ieeexplore.ieee.org/abstract/document/9860012)| ICME'22 | MLP+Attention  | Video| Multiple Instance Learning | ×  |
+| XEL | [ref](https://ieeexplore.ieee.org/document/9560033)| SPL'21  | MLP| Video| Cross-epoch Learning  | [√](https://github.com/sdjsngs/XEL-WSAD)  |
+| MIST| [ref](https://ieeexplore.ieee.org/document/9578773)| CVPR'21 | MLP+Attention  | Video| Multiple Instance Learning | [√](https://github.com/fjchange/MIST_VAD) |
+| MSLNet | [ref](https://ojs.aaai.org/index.php/AAAI/article/download/20028/version/18325/19787) | AAAI'22 | Transformer  | Video| Multiple Instance Learning | [√](https://github.com/xidianai/MSL)|
+| SRF | [ref](https://ieeexplore.ieee.org/document/9204830)| SPL'20  | MLP| Video| Self Reasoning  | ×  |
+| VadCLIP| [ref]()  | AAAI'24 | Attention| Video| Pre-trained Foundation Model  | [√](https://github.com/nwpu-zxr/VadCLIP)  |
+| MGFN| [ref]() | AAAI'23 | CNN+Attention  | Video| Multiple Instance Learning | [√](https://github.com/carolchenyx/MGFN.) |
+| TPWNG  | [ref]()  | CVPR'24 | Attention| Video| Pre-trained Foundation Model  | -  |
+| CoMo| [ref]()  | CVPR'23 | GCN+CNN  | Video| Multiple Instance Learning | -  |
+| UMIL| [ref]() | CVPR'23 | MLP| Video| Multiple Instance Learning | [√](https://github.com/ktr-hubrt/UMIL) |
+| UR-DMU | [ref]()  | AAAI'23 | Attention| Video| Multiple Instance Learning | [√](https://github.com/henrryzh1/UR-DMU)  |
+| PUMA| [ref]()| KDD'23  | AE | Time-series| Multiple Instance Learning | [√](https://github.com/Lorenzo-Perini/PU-MIL-AD) |
+| CU-Net | [ref]() | CVPR'23 | MLP| Video| Self-training  | [√](https://github.com/ArielZc/CU-Net) |
+| CLAWS Net+| [ref]()  | TNNLS'23| MLP| Video| Clustering  | [√](https://github.com/xaggi/claws_eccv) |
+| WETAS  | [ref](https://ieeexplore.ieee.org/document/9710920)  | ICCV'21 | MLP| Time-series/Video | Dynamic Time Warping | ×  |
+| Iwata et al. | [ref](https://dl.acm.org/doi/10.1007/s10994-020-05880-w)| ML Journal'20 | AE| Tabular | AUC maximization  | ×  |
+| Isudra | [ref](https://dl.acm.org/doi/10.1145/3439870) | TIST'21 | -  | Time-series| Bayesian optimization| [√](https://github.com/jb3dahmen/indirectsupervision) |
 ||||Inaccurate Supervision||||
-|LAC |    [ref](https://dl.acm.org/doi/10.1145/3459637.3482433)    | CIKM'21 |  MLP/GBDT  | Tabular         | Ensemble learning |    ×  
-|ADMoE |    [ref](https://arxiv.org/abs/2208.11290)    | AAAI'23 |  Agnostic  | Tabular         | Ensemble learning |    [√](https://github.com/microsoft/admoe)  
-|BGPAD  |    [ref](https://ieeexplore.ieee.org/document/9651957)    | ICNP'21 | LSTM+Attention   |   Time series       | Denoising network |   [√](https://github.com/universetao/A-General-Framework-BGP-Anomaly-Detection)   
-|SemiADC  | [ref](https://www.sciencedirect.com/science/article/pii/S0020025521003856)      | IS Journal'21 | GAN   | Graph | Denoising network|  × 
-|TSN |    [ref](https://ieeexplore.ieee.org/document/8953791)    | CVPR'19 | GCN   |   Video       |GCN  |   [√](https://github.com/jx-zhong-for-academic-purpose/GCN-Anomaly-Detection)   
+| LAC| [ref](https://dl.acm.org/doi/10.1145/3459637.3482433)  | CIKM'21 | MLP/GBDT | Tabular| Ensemble learning  | × |
+| ADMoE | [ref](https://arxiv.org/abs/2208.11290) | AAAI'23 | Agnostic | Tabular| Ensemble learning  | [√](https://github.com/microsoft/admoe)  |
+| BGPAD | [ref](https://ieeexplore.ieee.org/document/9651957)  | ICNP'21 | LSTM+Attention | Time series  | Denoising network  | [√](https://github.com/universetao/A-General-Framework-BGP-Anomaly-Detection) |
+| SemiADC  | [ref](https://www.sciencedirect.com/science/article/pii/S0020025521003856) | IS Journal'21 | GAN| Graph  | Denoising network  | × |
+| TSN| [ref](https://ieeexplore.ieee.org/document/8953791)  | CVPR'19 | GCN| Video  | GCN| [√](https://github.com/jx-zhong-for-academic-purpose/GCN-Anomaly-Detection) |
+| NRGL  | [ref]()| IJCAI'24 | MLP| Graph  | Denoising network  | [√](https://github.com/Shzuwu/NRGL)|
+| Zhong et al.| [ref]() | CVPR'19 | GCN| Video  | Problem Transformation | [√](https://github.com/jx-zhong-for-academic-purpose/GCN-Anomaly-Detection) |
 
 
 ### 2.Categorization of WSAD algorithms
@@ -193,14 +217,14 @@ in the [experiments](experiments) folder.
 
 | Method | $\gamma_{l}=1$\% | $\gamma_{l}=5$\% | $\gamma_{l}=25$\% | $\gamma_{l}=50$\% |
 |:--:|:--:|:--:|:--:|:--:|
-| |  | AUC-ROC  |   |   |
+| |  | AUC-ROC  |||
 |XGBOD | 80.03  | 86.68  | 93.20  | 95.28  |
 |DeepSAD | 75.25  | 81.74  | 89.64  | 92.72  |
 |REPEN | 77.20  | 82.23  | 86.26  | 87.45  |
 |DevNet | 79.05  | 85.94  | 89.76  | 90.97  |
 |PReNet | 79.04  | 85.66  | 89.88  | 91.11  |
 |FEAWAD | 73.93  | 82.44  | 89.20  | 91.55  |
-| |  | AUC-PR  |   |   |
+| |  | AUC-PR  |||
 |XGBOD | 46.23  | 61.58  | 75.89  | 80.57  |
 |DeepSAD | 38.06  | 49.65  | 67.04  | 74.47  |
 |REPEN | 46.57  | 56.38  | 63.39  | 65.73  |
