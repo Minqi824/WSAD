@@ -20,7 +20,6 @@ We first summarize and further categorize existing WSAD algorithms into three ca
 | SemiGNN| [ref](https://ieeexplore.ieee.org/document/8970829)  | ICDM'19 | MLP+Attention  | Graph| Anomaly feature representation learning | ×  |
 | ACT | [ref](https://arxiv.org/abs/2212.01096)| AAAI'23 | GNN| Graph| Anomaly feature representation learning | [√](https://github.com/QZ-WANG/ACT) |
 | DevNet | [ref](https://dl.acm.org/doi/10.1145/3292500.3330871)| KDD'19  | MLP| Tabular | Anomaly score learning  | [√](https://github.com/GuansongPang/deviation-network) |
-| PReNet | [ref](https://arxiv.org/abs/1910.13601)  | Preprint| MLP| Tabular | Anomaly score learning  | ×  |
 | FEAWAD | [ref](https://ieeexplore.ieee.org/abstract/document/9465358/) | TNNLS'21 | AE | Tabular | Anomaly score learning  | [√](https://github.com/yj-zhou/Feature_Encoding_with_AutoEncoders_for_Weakly-supervised_Anomaly_Detection) |
 | LEDGM  | [ref](https://ieeexplore.ieee.org/document/9492295) | TNNLS'21 | AE | Tabular | Anomaly score learning  | ×  |
 | PReNet | [ref](https://arxiv.org/abs/1910.13601)  | KDD'23  | MLP| Tabular | Anomaly score learning  | [√](https://github.com/mala-lab/PReNet)  |
@@ -83,7 +82,7 @@ We first summarize and further categorize existing WSAD algorithms into three ca
 ![](figures/Incomplete.png)
 - **_Anomaly Feature Representation Learning_**
   - **OE**\
-  📄[Learning outlier ensembles:The best of both worlds–supervised and unsupervised](https://www.semanticscholar.org/paper/Learning-Outlier-Ensembles%3A-The-Best-of-Both-Worlds-Micenkov%C3%A1-McWilliams/a517bc0a071be0982150c38c8ac3c52093995106)\
+  📄[Learning outlier ensembles:The best of both worlds–supervised and unsupervised](https://www.semanticscholar.org/paper/Learning-Outlier-Ensembles%3A-The-Best-of-Both-Worlds-Micenkov%C3%A1-McWilliams/a517bc0a071be0982150c38c8ac3c52093995106)
   - **XGBOD**\
   📄[Xgbod: improving supervised outlier detection with unsupervised representation learning](https://ieeexplore.ieee.org/document/8489605)\
   👉[Code Link](https://github.com/yzhao062/XGBOD)
@@ -102,15 +101,32 @@ We first summarize and further categorize existing WSAD algorithms into three ca
   - **Dual-MGAN**\
   📄[Dual-mgan: An efficient approach for semi-supervised outlier detection with few identified anomalies](https://dl.acm.org/doi/10.1145/3522690)\
   👉[Code Link](https://github.com/leibinghe/Dual-MGAN)
+  - **SemiGNN**\
+  📄[A Semi-Supervised Graph Attentive Network for Financial Fraud Detection](https://ieeexplore.ieee.org/document/8970829)\
+  - **ACT**\
+  📄[Cross-Domain Graph Anomaly Detection via Anomaly-aware Contrastive Alignment](https://arxiv.org/abs/2212.01096/)\
+  👉[Code Link](https://github.com/QZ-WANG/ACT)
 - **_Anomaly Score Learning_**
   - **DevNet**\
   📄[Deep anomaly detection with deviation networks](https://dl.acm.org/doi/10.1145/3292500.3330871)\
   👉[Code Link](https://github.com/GuansongPang/deviation-network)
   - **PReNet**\
   📄[Deep weakly-supervised anomaly detection](https://arxiv.org/abs/1910.13601)
+  👉[Code Link](https://github.com/mala-lab/PReNet)
   - **FEAWAD**\
   📄[Feature encoding with autoencoders for weakly supervised anomaly detection](https://ieeexplore.ieee.org/abstract/document/9465358/)\
   👉[Code Link](https://github.com/yj-zhou/Feature_Encoding_with_AutoEncoders_for_Weakly-supervised_Anomaly_Detection)
+  - **LEDGM**\
+  📄[Semisupervised Training of Deep Generative Models for High-Dimensional Anomaly Detection](https://ieeexplore.ieee.org/document/9492295/)\
+  - **Overlap**\
+  📄[Anomaly Detection with Score Distribution Discrimination](https://dl.acm.org/doi/10.1145/3580305.3599258)\
+  👉[Code Link](https://github.com/Minqi824/Overlap)
+  - **TargAD**\
+  📄[A Robust Prioritized Anomaly Detection when Not All Anomalies are of Primary Interest](https://ieeexplore.ieee.org/document/10597675)\
+  👉[Code Link](https://github.com/ZhouF-ECNU/TargAD)
+  - **SAD**\
+  📄[SAD: Semi-Supervised Anomaly Detection on Dynamic Graphs](https://arxiv.org/abs/2305.13573)\
+  👉[Code Link](https://github.com/D10Andy/SAD)
 - **_Graph Learning_**
   - **SNARE**\
   📄[Snare: a link analytic system for graph labeling and risk detection](https://www.cs.cmu.edu/~mmcgloho/pubs/snare.pdf)
@@ -125,16 +141,17 @@ We first summarize and further categorize existing WSAD algorithms into three ca
   👉[Code Link](https://github.com/kaize0409/Meta-GDN_AnomalyDetection)
   - **SemiADC**\
   📄[Semi-supervised anomaly detection in dynamic communication networks](www.sciencedirect.com/science/article/pii/S0020025521003856)
-  - **SSAD**\
-  📄[Toward supervised anomaly detection](https://dl.acm.org/doi/10.5555/2512538.2512545)
-  - **AAD**\
-  📄[Incorporating expert feedback into active anomaly discover](https://ieeexplore.ieee.org/document/7837915)\
-  👉[Code Link](https://github.com/shubhomoydas/pyaad)
+
   - **GraphUCB**\
   📄[Interactive anomaly detection on attributed networks](https://dl.acm.org/doi/10.1145/3289600.3290964)\
   👉[Code Link](https://github.com/kaize0409/GraphUCB_AnomalyDetection)
   
 - **_Active learning and reinforcement learning_**
+  - **SSAD**\
+  📄[Toward supervised anomaly detection](https://dl.acm.org/doi/10.5555/2512538.2512545)
+  - **AAD**\
+  📄[Incorporating expert feedback into active anomaly discover](https://ieeexplore.ieee.org/document/7837915)\
+  👉[Code Link](https://github.com/shubhomoydas/pyaad)
   - **Meta-AAD**\
   📄[Meta-aad: Active anomaly detection with deep reinforcement learning](https://ieeexplore.ieee.org/document/9338270)\
   👉[Code Link](https://github.com/daochenzha/Meta-AAD)
@@ -142,6 +159,28 @@ We first summarize and further categorize existing WSAD algorithms into three ca
   📄[Toward deep supervised anomaly detection: Reinforcement learning from partially labeled anomaly data](https://dl.acm.org/doi/10.1145/3447548.3467417)
   - **SLA-VAE**\
   📄[A semi-supervised vae based active anomaly detection framework in multivariate time series for online systems](https://dl.acm.org/doi/abs/10.1145/3485447.3511984)
+  - **SOEL**\
+  📄[Deep Anomaly Detection under Labeling Budget Constraints](https://arxiv.org/abs/2302.07832)\
+  👉[Code Link](https://github.com/aodongli/Active-SOEL)
+
+- **_Data Augmentation_**
+  - **CutAddPaste**\
+  📄[CutAddPaste: Time Series Anomaly Detection by Exploiting Abnormal Knowledge](https://dl.acm.org/doi/10.1145/3637528.3671739)
+  👉[Code Link](https://github.com/ruiking04/CutAddPaste)
+  - **NNG-Mix**\
+  📄[NNG-Mix: Improving Semi-supervised Anomaly Detection with Pseudo-anomaly Generation](https://arxiv.org/abs/2311.11961)\
+  👉[Code Link](https://github.com/donghao51/NNG-Mix)
+  - **ROSAS**\
+  📄[RoSAS: Deep Semi-supervised Anomaly Detection with Contamination-resilient Continuous Supervision](https://www.sciencedirect.com/science/article/abs/pii/S0306457323001966)\
+  👉[Code Link](https://github.com/xuhongzuo/rosas)
+  - **ADGym**\
+  📄[ADGym: Design Choices for Deep Anomaly Detection](https://arxiv.org/abs/2309.15376)\
+  👉[Code Link](https://github.com/Minqi824/ADGym)
+  - **ConsisGAD**\
+  📄[Consistency Training with Learnable Data Augmentation for Graph Anomaly Detection with Limited Supervision](https://openreview.net/forum?id=elMKXvhhQ9)\
+  👉[Code Link](https://github.com/Xtra-Computing/ConsisGAD)
+  - **GenGA**\
+  📄[Graph Anomaly Detection with Few Labels: A Data-Centric Approach](https://dl.acm.org/doi/10.1145/3637528.3671929)\
 
 
 #### 2.2 AD with Inexact Supervision
