@@ -47,7 +47,7 @@ We first summarize and further categorize existing WSAD algorithms into three ca
 | TCN-IBL| [ref](https://ieeexplore.ieee.org/document/8803657)| ICIP'19 | CNN| Video| Multiple Instance Learning | ×  |
 | AR-Net | [ref](https://ieeexplore.ieee.org/document/9102722)| ICME'20 | MLP| Video| Multiple Instance Learning | [√](https://github.com/wanboyang/Anomaly_AR_Net_ICME_2020) |
 | RTFM| [ref](https://ieeexplore.ieee.org/document/9710957)| ICCV'21 | CNN+Attention  | Video| Multiple Instance Learning | [√](https://github.com/tianyu0207/RTFM)|
-| Zhu et al. | [ref](https://arxiv.org/abs/1907.1021)| BMVC'19 | AE+Attention| Video| Multiple Instance Learning | ×  |
+| Zhu et al. | [ref](https://arxiv.org/abs/1907.10211)| BMVC'19 | AE+Attention| Video| Multiple Instance Learning | ×  |
 | Purwanto et al.| [ref](https://ieeexplore.ieee.org/document/9710685)| ICCV'21 | TRN+Attention  | Video| Multiple Instance Learning | ×  |
 | MPRF| [ref](https://www.ijcai.org/proceedings/2021/0162.pdf)  | IJCAI'21 | MLP+Attention  | Video| Multiple Instance Learning | ×  |
 | MCR | [ref](https://ieeexplore.ieee.org/abstract/document/9860012)| ICME'22 | MLP+Attention  | Video| Multiple Instance Learning | ×  |
@@ -59,7 +59,7 @@ We first summarize and further categorize existing WSAD algorithms into three ca
 | MGFN| [ref](https://arxiv.org/abs/2211.15098) | AAAI'23 | CNN+Attention  | Video| Multiple Instance Learning | [√](https://github.com/carolchenyx/MGFN.) |
 | TPWNG  | [ref](https://arxiv.org/abs/2404.08531)  | CVPR'24 | Attention| Video| Pre-trained Foundation Model  | -  |
 | CoMo| [ref](https://openaccess.thecvf.com/content/CVPR2023/papers/Cho_Look_Around_for_Anomalies_Weakly-Supervised_Anomaly_Detection_via_Context-Motion_Relational_CVPR_2023_paper.pdf)  | CVPR'23 | GCN+CNN  | Video| Multiple Instance Learning | -  |
-| UMIL| [ref](https://arxiv.org/abs/2303.12369v1) | CVPR'23 | MLP| Video| Multiple Instance Learning | [√](https://github.com/ktr-hubrt/UMIL) |
+| UMIL| [ref](https://arxiv.org/abs/2303.12369) | CVPR'23 | MLP| Video| Multiple Instance Learning | [√](https://github.com/ktr-hubrt/UMIL) |
 | UR-DMU | [ref](https://arxiv.org/abs/2302.05160)  | AAAI'23 | Attention| Video| Multiple Instance Learning | [√](https://github.com/henrryzh1/UR-DMU)  |
 | PUMA| [ref](https://dl.acm.org/doi/10.1145/3580305.3599409)| KDD'23  | AE | Time-series| Multiple Instance Learning | [√](https://github.com/Lorenzo-Perini/PU-MIL-AD) |
 | CU-Net | [ref](https://arxiv.org/abs/2212.04090) | CVPR'23 | MLP| Video| Self-training  | [√](https://github.com/ArielZc/CU-Net) |
@@ -72,7 +72,6 @@ We first summarize and further categorize existing WSAD algorithms into three ca
 | ADMoE | [ref](https://arxiv.org/abs/2208.11290) | AAAI'23 | Agnostic | Tabular| Ensemble learning  | [√](https://github.com/microsoft/admoe)  |
 | BGPAD | [ref](https://ieeexplore.ieee.org/document/9651957)  | ICNP'21 | LSTM+Attention | Time series  | Denoising network  | [√](https://github.com/universetao/A-General-Framework-BGP-Anomaly-Detection) |
 | SemiADC  | [ref](https://www.sciencedirect.com/science/article/pii/S0020025521003856) | IS Journal'21 | GAN| Graph  | Denoising network  | × |
-| TSN| [ref](https://ieeexplore.ieee.org/document/8953791)  | CVPR'19 | GCN| Video  | GCN| [√](https://github.com/jx-zhong-for-academic-purpose/GCN-Anomaly-Detection) |
 | NRGL  | [ref](https://www.ijcai.org/proceedings/2024/271)| IJCAI'24 | MLP| Graph  | Denoising network  | [√](https://github.com/Shzuwu/NRGL)|
 | Zhong et al.| [ref](https://arxiv.org/abs/1903.07256) | CVPR'19 | GCN| Video  | Problem Transformation | [√](https://github.com/jx-zhong-for-academic-purpose/GCN-Anomaly-Detection) |
 
@@ -186,7 +185,7 @@ We first summarize and further categorize existing WSAD algorithms into three ca
 #### 2.2 AD with Inexact Supervision
 ![](figures/Inexact.png)
 - **_MIL-based_**
-  - **MIL**\
+  - **Sultani et al.**\
   📄[Real-world anomaly detection in surveillance videos](https://ieeexplore.ieee.org/document/8578776)\
   👉[Code Link](https://github.com/vantage-vision-vv/Anomaly-Detection-in-Surveillance-Videos)
   - **AR-Net**\
@@ -197,9 +196,9 @@ We first summarize and further categorize existing WSAD algorithms into three ca
   - **RTFM**\
   📄[Weakly-supervised video anomaly detection with robust temporal feature magnitude learning](https://ieeexplore.ieee.org/document/9710957)\
   👉[Code Link](https://github.com/tianyu0207/RTFM)
-  - **Motion-Aware**\
-  📄[Motion-aware feature for improved video anomaly detection](https://arxiv.org/abs/1907.1021)
-  - **CRF-Attention**\
+  - **Zhu et al.**\
+  📄[Motion-aware feature for improved video anomaly detection](https://arxiv.org/abs/1907.10211)
+  - **Purwanto et al.**\
   📄[Dance with self-attention: A new look of conditional random fields on anomaly detection in videos](https://ieeexplore.ieee.org/document/9710685)
   - **MPRF**\
   📄[Weakly-supervised spatio-temporal anomaly detection in surveillance video](https://www.ijcai.org/proceedings/2021/0162.pdf)
@@ -214,12 +213,36 @@ We first summarize and further categorize existing WSAD algorithms into three ca
   - **MSLNet**\
   📄[Self-training multi-sequence learning with transformer for weakly supervised video anomaly detection](https://ojs.aaai.org/index.php/AAAI/article/download/20028/version/18325/19787)\
   👉[Code Link](https://github.com/xidianai/MSL)
+  - **VadCLIP**\
+  📄[VadCLIP: Adapting Vision-Language Models for Weakly Supervised Video Anomaly Detection](https://arxiv.org/abs/2308.11681)\
+  👉[Code Link](https://github.com/nwpu-zxr/VadCLIP)
+  - **MGFN**\
+  📄[MGFN: Magnitude-Contrastive Glance-and-Focus Network for Weakly-Supervised Video Anomaly Detection](https://arxiv.org/abs/2211.15098)\
+  👉[Code Link](https://github.com/carolchenyx/MGFN.)
+  - **TPWNG**\
+  📄[Text Prompt with Normality Guidance for Weakly Supervised Video Anomaly Detection](https://arxiv.org/abs/2404.08531)\
+  - **CoMo**\
+  📄[Look Around for Anomalies: Weakly-supervised Anomaly Detection via Context-Motion Relational Learning](https://openaccess.thecvf.com/content/CVPR2023/papers/Cho_Look_Around_for_Anomalies_Weakly-Supervised_Anomaly_Detection_via_Context-Motion_Relational_CVPR_2023_paper.pdf)\
+  - **UMIL**\
+  📄[Unbiased Multiple Instance Learning for Weakly Supervised Video Anomaly Detection](https://arxiv.org/abs/2303.12369)\
+  👉[Code Link](https://github.com/ktr-hubrt/UMIL)
+  - **UR-DMU**\
+  📄[Dual Memory Units with Uncertainty Regulation for Weakly Supervised Video Anomaly Detection](https://arxiv.org/abs/2302.05160)\
+  👉[Code Link](https://github.com/henrryzh1/UR-DMU)
+  - **PUMA**\
+  📄[Learning from Positive and Unlabeled Multi-Instance Bags in Anomaly Detection](https://dl.acm.org/doi/10.1145/3580305.3599409)\
+  👉[Code Link](https://github.com/Lorenzo-Perini/PU-MIL-AD)
+  - **CU-Net**\
+  📄[Exploiting Completeness and Uncertainty of Pseudo Labels for Weakly Supervised Video Anomaly Detection](https://arxiv.org/abs/2212.04090)\
+  👉[Code Link](https://github.com/ArielZc/CU-Net)
 - **_Non MIL-based_**
   - **SRF**\
   📄[A self-reasoning framework for anomaly detection using video-level labels](https://ieeexplore.ieee.org/document/9204830)
   - **WETAS**\
   📄[Weakly supervised temporal anomaly seg- mentation with dynamic time warping](https://ieeexplore.ieee.org/document/9710920)
-- **_Evaluating and Selecting Unsupervised methods_**
+  - **CLAWS Net+**\
+  📄[Clustering Aided Weakly Supervised Training to Detect Anomalous Events in Surveillance Videos](https://ieeexplore.ieee.org/document/10136845)\
+  👉[Code Link](https://github.com/xaggi/claws_eccv)
   - **Inexact AUC**\
   📄[Anomaly detection with inexact labels](https://dl.acm.org/doi/10.1007/s10994-020-05880-w)
   - **Isudra**\
@@ -241,31 +264,17 @@ We first summarize and further categorize existing WSAD algorithms into three ca
   👉[Code Link](https://github.com/universetao/A-General-Framework-BGP-Anomaly-Detection)
   - **SemiADC**\
   📄[Semi-supervised anomaly detection in dynamic communication networks](https://www.sciencedirect.com/science/article/pii/S0020025521003856)
+  - **NRGL**\
+  📄[Robust Heterophilic Graph Learning against Label Noise for Anomaly Detection](https://www.ijcai.org/proceedings/2024/271)\
+  👉[Code Link](https://github.com/Shzuwu/NRGL)
 
-- **_Graph Learning_**
-  - **TSN**\
+- **_Problem Transformation_**
+  - **Zhong et al.**\
   📄[Graph Convolutional Label Noise Cleaner: Train a Plug-And-Play Action Classifier for Anomaly Detection](https://ieeexplore.ieee.org/document/8953791)\
   👉[Code Link](https://github.com/jx-zhong-for-academic-purpose/GCN-Anomaly-Detection)
 
 
-## Experiment
-One can easily reproduce the experimental results in our paper by running the [run.py](experiments/run.py) python file
-in the [experiments](experiments) folder.
 
-| Method | $\gamma_{l}=1$\% | $\gamma_{l}=5$\% | $\gamma_{l}=25$\% | $\gamma_{l}=50$\% |
-|:--:|:--:|:--:|:--:|:--:|
-| |  | AUC-ROC  |||
-|XGBOD | 80.03  | 86.68  | 93.20  | 95.28  |
-|DeepSAD | 75.25  | 81.74  | 89.64  | 92.72  |
-|REPEN | 77.20  | 82.23  | 86.26  | 87.45  |
-|DevNet | 79.05  | 85.94  | 89.76  | 90.97  |
-|PReNet | 79.04  | 85.66  | 89.88  | 91.11  |
-|FEAWAD | 73.93  | 82.44  | 89.20  | 91.55  |
-| |  | AUC-PR  |||
-|XGBOD | 46.23  | 61.58  | 75.89  | 80.57  |
-|DeepSAD | 38.06  | 49.65  | 67.04  | 74.47  |
-|REPEN | 46.57  | 56.38  | 63.39  | 65.73  |
-|DevNet | 53.61  | 64.01  | 69.52  | 71.13  |
-|PReNet | 54.52  | 64.19  | 70.46  | 71.62  |
-|FEAWAD | 51.19  | 62.30  | 69.65  | 72.34  |
+## Experiment
+The experimental results can be seen in our previous work [ADBench](https://github.com/Minqi824/ADBench)
 
