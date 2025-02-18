@@ -78,7 +78,7 @@ We first summarize and further categorize existing WSAD algorithms into three ca
 
 ### 2.Categorization of WSAD algorithms
 #### 2.1 AD with Incomplete Supervision
-![](figures/Incomplete.png)
+![](figures/Incomplete25.png)
 - **_Anomaly Feature Representation Learning_**
   - **OE**\
   📄[Learning outlier ensembles:The best of both worlds–supervised and unsupervised](https://www.semanticscholar.org/paper/Learning-Outlier-Ensembles%3A-The-Best-of-Both-Worlds-Micenkov%C3%A1-McWilliams/a517bc0a071be0982150c38c8ac3c52093995106)
@@ -183,7 +183,7 @@ We first summarize and further categorize existing WSAD algorithms into three ca
 
 
 #### 2.2 AD with Inexact Supervision
-![](figures/Inexact.png)
+![](figures/Inexact25.png)
 - **_MIL-based_**
   - **Sultani et al.**\
   📄[Real-world anomaly detection in surveillance videos](https://ieeexplore.ieee.org/document/8578776)\
@@ -251,7 +251,7 @@ We first summarize and further categorize existing WSAD algorithms into three ca
 
 
 #### 2.3 AD with Inaccurate Supervision
-![](figures/Inaccurate.png)
+![](figures/Inaccurate25.png)
 - **_Ensemble Learning_**
   - **LAC**\
   📄[Fraud Detection under Multi-Sourced Extremely Noisy Annotations](https://dl.acm.org/doi/10.1145/3459637.3482433)
